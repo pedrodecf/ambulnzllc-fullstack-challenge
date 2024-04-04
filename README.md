@@ -1,34 +1,36 @@
-Challenge for Fullstack Developer
-===============================
+Backend
+=======
 
-To better assess a candidate's development skills, we would like to provide the following challenge.
+Prerequisites
+-------------
 
-This is intended to be developed within a few hours (plus prep time if using an unfamiliar language).
+* [Git](http://git-scm.com/)
+* [MySQL](https://www.mysql.com/)
 
-Setup
------
+Option one (preferred)
+* [Ruby](https://www.ruby-lang.org)
+* Ruby framework of your choice (Rails preferred)
 
-* `git clone git@github.com:AmbulnzLLC/fullstack-challenge.git && cd fullstack-challenge`
+Option two
+* [nodejs](https://nodejs.org/en/)
+* nodejs framework of your choice
 
-Evaluation
-----------
+* You can use any additional libraries you want.
 
-Our goal is to find answers to these questions on the backend:
-* Do your tests reflect best practices such as BDD?
-* Do you understand RESTful interfaces?
-* Do you follow SOLID principles?
+Project description
+-------------------
 
-Our goal is to find answers to these questions on the frontend:
-* Do you understand the JavaScript language and more in general web technologies?
-* Can you design interfaces that are clear and easy to use?
+**Pizzeria**
 
-Our goal is to find answers to these questions in general:
-* Do you understand the chosen stack, framework, and MVC pattern in general?
-* Can you judge which library/framework is the best fit for a job and use it correctly?
-* Do you master your working environment?
+This application serves the purpose of exposing a JSON API to be consumed by a frontend client for ordering pizza.
 
-Deliverables
-----------
+The following entities should be created (including proper relations):
 
-* Link to Github repo
-* Instructions how to run the app
+* *pizza* - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
+* *order* - has items
+* *order item* - has a pizza and quantity
+
+The following endpoints should return a JSON response:
+* `/api/orders` (list of orders)
+* `/api/orders/:id` (details of an individual order)
+* `/api/pizzas` (list of pizzas; see './backend/example-pizzas.json')

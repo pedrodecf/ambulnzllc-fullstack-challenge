@@ -4,7 +4,8 @@
   "description": "Backend",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --watch --no-warnings src/server.ts"
+    "dev": "tsx --watch --no-warnings src/server.ts",
+    "seed": "ts-node src/seed/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@types/node": "^20.12.2",
     "eslint": "^8.57.0",
     "prisma": "^5.11.0",
+    "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3"
